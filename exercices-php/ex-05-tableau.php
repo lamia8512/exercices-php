@@ -53,6 +53,12 @@
         foreach ($animaux AS $animal => $bruit) {
             echo "<p> Le $animal fait un $bruit.</p>";
         }
+
+        /* foreach ($animaux as $key => $valeur) {
+            echo "<p> Le $key fait $valeur.</p>";
+            }
+        */
+        
     ?>
     
 </body>
