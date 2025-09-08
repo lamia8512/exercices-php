@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Condition</title>
-</head>
-<body>
+<?php
+    require 'partials/head.php';
+?>
     <h1>Exercices Conditions</h1>
     <h2>Exercice 1</h2>
     <?php
@@ -19,41 +14,37 @@
     ?>
     <h2>Exercice 2 </h2>
     <?php
-        $jour = rand(1,7);
+        $sunhour = 1; 
+     
+        switch ($sunhour) {
+            case 1 :
+                echo '<p>We are now monday</p>';
+            break;
 
-    switch ($jour){
-        case 1 : 
-            echo '<p>1 : c\'est lundi </p>';
-        break;  // break est obligatoire pour quitter la condition une fois le case exécuté
-        
-        case 2 :
-            echo '<p>2 : c\'est mardi </p>';
-        break; 
+            case 2 :
+                echo '<p>we are now tuesday</p>';
+            break;
 
-        case 3 : 
-            echo '<p>3: c\'est mercredi </p>';
-        break;  // break est obligatoire pour quitter la condition une fois le case exécuté
-        
-        case 4 :
-            echo '<p>4 : c\'est jeudi </p>';
-        break;
+            case 3 :
+                echo '<p>we are now wednesday</p>';
+            break;
 
-         case 5 : 
-            echo '<p>5 : c\'est vendredi </p>';
-        break;  // break est obligatoire pour quitter la condition une fois le case exécuté
-        
-        case 6 :
-            echo '<p>2 : c\'est samedi </p>';
-        break; 
+            case 4 :
+                echo '<p>we are now thursday</p>';
+            break;
 
-        case 7 : 
-            echo '<p>3: c\'est dimanche </p>';
-        break;  // break est obligatoire pour quitter la condition une fois le case exécuté
-        
-        default:  // cas par défaut si on n'entre pas dans les cases précédentes (équivalent du else)
-            echo '<p>3: Entre un jour de la semaine valide </p>';
-        break;    
-    }
+            case 5 :
+                echo '<p>we are now friday</p>';
+            break;
+
+            case 6 :
+                echo '<p>we are now saturday</p>';
+            break;
+
+            default:
+                echo '<p>we are now sunday</p>';
+            break;
+        }
     ?>
     
     <h2>Exercice 3</h2>
