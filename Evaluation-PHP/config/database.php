@@ -1,0 +1,15 @@
+<?php
+
+try {
+    // Connexion à la base
+    $pdo = new PDO(
+        "mysql:host=database;dbname=unicorn;charset=utf8",
+        "root",
+        "admin"
+    );
+    //echo "Connexion réussie ✅";
+
+} catch (PDOException $e) {
+    // Gestion d'erreur
+    die("Erreur de connexion ❌ : " . $e->getMessage());
+};
